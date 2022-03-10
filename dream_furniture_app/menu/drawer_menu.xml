@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgc"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/n1" />
+        <item
+            android:id="@+id/sbc"
+            android:icon="@drawable/ic_shopping_basket"
+            android:title="@string/n2" />
+        <item
+            android:id="@+id/yo"
+            android:icon="@drawable/ic_order"
+            android:title="@string/n3" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person"
+            android:title="@string/n4" />
+        <item
+            android:id="@+id/cu"
+            android:icon="@drawable/ic_contact_mail"
+            android:title="@string/n5" />
+        <item
+            android:id="@+id/au"
+            android:icon="@drawable/au"
+            android:title="@string/n6" />
+    </group>
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:icon="@drawable/au"
+                android:title="@string/login" />
+            <item
+                android:id="@+id/signup"
+                android:icon="@drawable/au"
+                android:title="@string/signup" />
+        </menu>
+    </item>
+</menu>
