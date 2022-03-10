@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgc"
+    tools:context=".AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a1"
+        android:textSize="30sp"
+        android:background="@drawable/border"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wwr"
+        android:background="@drawable/border2"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/tc1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a2"
+        android:textSize="30sp"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ud"
+        android:background="@drawable/border2"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/tc1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a3"
+        android:textSize="30sp"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:layout_marginTop="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rp"
+        android:background="@drawable/border2"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/tc1"/>
+    <include layout="@layout/footer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="45sp"/>
+</LinearLayout>
+</ScrollView>
