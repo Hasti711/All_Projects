@@ -1,0 +1,10 @@
+.flex-cotainer{
+	display: flex;
+	flex-direction: row;
+}
+.flex-container div{
+}
+.tv1
+{
+	background-image: url('image/banner1.jpg');
+}
