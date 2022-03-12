@@ -1,0 +1,57 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+.main
+{
+  background-color: indianred;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  width: 600px;
+  margin-left: 100px;
+  height: 650px;
+  display: inline-block;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  margin-left: 170px; 
+  height: 650px;
+  display: inline-block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.textbox{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: black;
+}
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color: indianred;
+  border: 1px solid white;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: indianred;
+  color: white;
+}

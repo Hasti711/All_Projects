@@ -1,0 +1,35 @@
+<div *ngIf="!issignedin">
+<div class="main">
+    <div class="container">
+    <img src="../../assets/images/login.jpg" height="600" width="500" style="border: 2px solid indianred;">
+    <div class="centered">
+    <div class="textbox">
+        <h1 style="font-size: 2em;color: indianred;">Sign Up</h1>
+        <i class="fas fa-user fa-2x" style="position: relative;right: 20px;top: 5px;color: indianred;"></i>
+        <input type="text" placeholder="UserName" style="width: 170px;height: 30px;" ><br><br>
+        <i class="fa fa-envelope" style="font-size:24px;position: relative;right: 20px;top: 5px;color: indianred;" ></i>
+    <input type = "text" placeholder="email" style="width: 170px;height: 30px;" #email1 /><br><br>
+    <i class="fas fa-lock fa-2x" style="position: relative;right: 20px;top: 5px;color: indianred;"></i>
+    <input type="text" placeholder="passowd" style="width: 170px;height: 30px;" #pass1 /><br><br>
+    <button class="btn" style="width: 100px;height: 30px;" (click)="onsignup(email1.value,pass1.value)">Sign Up</button>
+    </div>
+    </div>
+    </div>
+    <!--</div>
+    <div *ngIf="!issignedin">-->
+    <div class="container1">
+        <img src="../../assets/images/login.jpg" height="600" width="500" style="border: 2px solid indianred;">
+        <div class="centered">
+            <div class="textbox">
+    <h1 style="font-size: 2em;color: indianred;">Log In</h1>
+    <i class="fas fa-user fa-2x" style="position: relative;right: 20px;top: 5px;color: indianred;"></i>
+    <input type = "text" placeholder="email" style="width: 170px;height: 30px;"  #email2 /><br><br>
+    <i class="fas fa-lock fa-2x" style="position: relative;right: 20px;top: 5px;color: indianred;"></i>
+    <input type="text" placeholder="password" style="width: 170px;height: 30px;" #pass2 /><br><br>
+    <button class="btn" style="width: 100px;height: 30px;" (click)="onsignin(email2.value,pass2.value)">Log In</button>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<app-logout *ngIf="issignedin" islogout="handlelogout()"></app-logout>
