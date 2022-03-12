@@ -1,0 +1,43 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div *ngIf="!issignedin">
+    <a routerLink="/regnlog" routerLinkActive="active" style="font-size: large;margin-left: 650px;position: relative;top: 40px;">Please Log In to Continue</a>
+</div>
+<div *ngIf="issignedin">
+  
+  <br><br>
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="To do" [(ngModel)]="txt" #itemtitle>
+  <input type="text" class="form-control" placeholder="Category" [(ngModel)] = "todocat" #cate>
+  <input type="text" class="form-control" placeholder="Date | dd/mm/yyyy" [(ngModel)]="dttodo" #dttorm>
+  <input type="text" class="form-control" placeholder="Time" [(ngModel)]="tttodo" #tttorm>
+  <div class="input-group-addon hover-cursor" style="cursor: pointer; width: 35px;background-color: indianred; color: white;" (click) = "onAdd(itemtitle,dttorm,tttorm,cate)">
+  <i class="fa fa-plus-circle fa-2x" style="font-size: 25px;"></i>
+  </div>
+  </div>
+  <ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of todolistarr">
+  <span class="hover-cursor" [class.text-success]="item.isChecked" (click)="alterCheck(item.$key,item.isChecked)">
+  <i class="fa fa-lg" [ngClass]="item.isChecked?'fa-check-circle-o':'fa-circle-thin'"></i>
+  </span><p><br>
+  <span class="hover-cursor" [class.text-success]="item.isstar" (click)="starcheck(item.$key,item.isstar)">
+  <i class="fa fa-lg" [ngClass]="item.isstar?'fa fa-star':'fa fa-star-o'"></i>
+  </span></p>
+  <p></p>Task :- {{item.title}}<p></p> Category :-  {{item.category}}  <p></p> Date :-  {{item.dttorm}} <p></p> Time :-  {{item.tttorm}}
+  <p></p>
+  <span class="hover-cursor text-danger" style="cursor: pointer;" (click)="onedit(item.title,item.dttorm,item.tttorm,item.category,item.$key)">
+  <strong>Edit</strong>
+  </span>
+    <p></p>
+  <span class="hover-cursor text-danger" style="cursor:pointer;" (click)="onDelete(item.$key)">
+  <i class="fa fa-trash-o fa-lg"></i>
+  </span>
+  </li>
+  </ul>
+<div class="sidenav">
+  <div>
+    <a routerLink="/exportlist"  style="background-color: indianred;color: black;width: 150px;border: 1px solid;">Export Data</a>
+    </div><br>
+    </div>
+  </div>

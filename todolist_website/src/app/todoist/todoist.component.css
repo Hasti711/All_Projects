@@ -1,0 +1,139 @@
+
+.single,.weekly,.monthly,.yearly
+{
+    padding-left: 300px;
+    margin-top: 40px;
+}
+
+  .ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: indianred;
+    height: 100px;
+  }
+  
+  .column {
+    float: left;
+    width: 300px;
+    padding-top: 70px;
+    background-color:white;
+    border: 2px solid indianred;
+    margin-left: 1200px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .li1 {
+    float: left;
+  }
+  
+  .li1 a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+  }
+  li a:hover:not(.active) {
+    background-color: white;
+    color: indianred;
+  }
+  
+  .sidenav {
+    height: 100px;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    margin-top: 100px;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: indianred;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .div2{
+    background-color: indianred;
+    height: 300px;
+    border-radius: 1px solid white;
+    margin-top: 400px;
+   }
+  
+   .text1{
+    margin-left: 100px;
+    color: white;
+   }
+
+   .input-group,.list-group
+   {
+     width: 1000px;
+     height: 100%;
+     margin-left: 200px;
+     font-size: large;
+   }
+   .form-control
+   {
+     font-size: large;
+   }
