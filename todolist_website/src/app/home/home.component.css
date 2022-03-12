@@ -1,0 +1,85 @@
+.column {
+    float: left;
+    height: 400px;
+    width: 350px;
+    padding: 30px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: indianred;
+    height: 100px;
+  }
+
+  .text1{
+    margin-left: 100px;
+    color: white;
+   }
+
+   .img{
+    position: relative;
+    top: 15px;
+    background-color: tomato;
+   }
+
+  .btn1{
+    font-size: 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    left: 690px;
+    background-color: indianred;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+   .p1{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .p2{
+    font-size: 30px;
+    border: none;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 560px;
+    background: transparent;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  .p3{
+    padding-top: 30px;
+    font-size: 30px;
+    color: black;
+    font-family: georgia;
+  }
+  
+  #div1{
+    background-image: url('../../assets/images/bg4.jpg');
+    height: 700px;
+    width: 1518px;
+   }
+  
+  
+  .card
+  {
+    height: 120%;width: 110%;
+    margin-left: 50px;
+  }
+    
