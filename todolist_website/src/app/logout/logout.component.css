@@ -1,0 +1,14 @@
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background-color: indianred;
+    border: 1px solid white;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: indianred;
+    color: white;
+  }
