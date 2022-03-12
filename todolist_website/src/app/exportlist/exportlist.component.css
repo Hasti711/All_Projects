@@ -1,0 +1,12 @@
+.btn1{
+    font-size: 20px;
+    border-color: transparent;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: indianred;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
